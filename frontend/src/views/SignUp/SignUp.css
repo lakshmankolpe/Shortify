@@ -1,0 +1,31 @@
+.app-title {
+  text-align: center;
+}
+
+.user-input-form {
+  background-color: white;
+  width: 30%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.user-signup-input {
+  display: block;
+  margin: 10px;
+  width: 90%;
+  height: 40px;
+  font-size: 20px;
+  padding: 0 15px;
+  border: 2px solid rgb(35, 176, 232);
+}
+.user-signup-input:focus, .use:active{
+    outline: none;
+}
+
+.register-button {
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  padding: 5px 30px;
+  border-radius: 3px;
+}

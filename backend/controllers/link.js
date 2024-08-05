@@ -16,6 +16,8 @@ const postLink = async (req, res) => {
   });
 };
 
+
+
 const getSlugRedirect = async (req, res) => {
   const { slug } = req.params;
 
@@ -27,9 +29,9 @@ const getSlugRedirect = async (req, res) => {
       message: "Link is not found",
     });
   }
-  link.views =link.views +1
-   await link.save()
-res.redirect(link.target);
+  link.views = link.views + 1;
+  await link.save();
+  res.redirect(link.target);
 };
 
 export { postLink, getSlugRedirect };

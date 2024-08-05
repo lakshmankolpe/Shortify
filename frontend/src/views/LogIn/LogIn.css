@@ -1,0 +1,21 @@
+
+.app-title{
+    text-align: center;
+}
+
+.user-input-form{
+    background-color: white;
+    padding: 20px;
+}
+
+.user-login-input{
+    display: block;
+    margin: 10px;
+width: 90%;
+
+}
+.login-button{
+    display: block;
+    margin: 0 auto;
+    padding: 5px 30px;
+}

@@ -4,7 +4,8 @@ import dotenv from "dotenv";
 dotenv.config();
 import cors from "cors";
 import healthApi from "./controllers/health.js";
-import { postLink, getSlugRedirect } from "./controllers/link.js";
+import { postLink, getSlugRedirect, } from "./controllers/link.js";
+import {postSignup,postLogin} from "./controllers/user.js"
 
 const app = express();
 app.use(express.json());
@@ -19,6 +20,9 @@ const connectMongoDB = async () => {
 connectMongoDB();
 
 app.get("/health", healthApi);
+
+app.post("/signup",postSignup);
+app.post("/login",postLogin)
 
 app.post("/link", postLink);
 app.get("/:slug", getSlugRedirect);
