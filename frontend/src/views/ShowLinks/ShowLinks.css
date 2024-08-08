@@ -1,16 +1,15 @@
 .showall-link-container{
     /* background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); */
-    
-     padding: 0px;
      height: 80vh;
      width: 98%;
      margin: 0 auto;
      overflow-y:scroll ;
      border-radius: 10px;
-     
-}
+    }
 
 
 .showalllinks-title{
     text-align: center;
 }
+
+ 

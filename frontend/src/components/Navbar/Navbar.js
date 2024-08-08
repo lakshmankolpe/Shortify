@@ -21,12 +21,12 @@ function Navbar() {
       </div>
 
       <div className="search-item-container">
-        <Link to="" className="search-item">
+        <Link to="/" className="search-item">
           Home
         </Link>
-        <Link to="/" className="search-item">
+        {/* <Link to="/" className="search-item">
           generate
-        </Link>
+        </Link> */}
         <Link to="/showlinks" className="search-item">
           my Links
         </Link>

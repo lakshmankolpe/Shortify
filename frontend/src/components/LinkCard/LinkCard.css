@@ -2,7 +2,6 @@
   background-color: white;
   padding: 15px;
   width: 95%;
-
   margin: 30px auto;
   border-radius: 10px;
   position: relative;
@@ -21,9 +20,6 @@
   bottom: 2px;
 }
 .link-card-viwes {
-  /* position: absolute;
-    top: 10px;
-    right: 20px; */
   font-size: 20px;
   font-weight: bold;
 }
@@ -32,36 +28,29 @@
   margin-top: 5px;
 }
 
-.link-card-views-text {
-  /* position: absolute;
-    right: 10px;
-    top: 30px; */
-}
+
 .long-link-icon {
   height: 20px;
   margin-top: 10px;
 }
-.log-url-icon{
-    height: 23px;
+.log-url-icon {
+  height: 23px;
 }
 .short-url-link {
   text-decoration: none;
   color: red;
   font-size: 18px;
-  
 }
 .target-url-link {
   text-decoration: none;
   font-size: 18px;
   color: black;
- 
 }
 .link-key {
   color: black;
   font-size: 17px;
   margin-right: 10px;
   font-weight: bold;
-
 }
 
 .copy-img-icon {
@@ -72,3 +61,53 @@
   cursor: pointer;
 }
 
+
+
+/* Media queries for mobile devices */
+@media screen and (max-width: 600px) {
+  .link-card {
+    width: 90%;
+    padding: 10px;
+    margin: 20px auto;
+    box-shadow: 3px 3px 8px 1px grey;
+  }
+
+  .card-title {
+    font-size: 18px;
+    text-align: center;  }
+
+  .copy-img-icon {
+    height: 30px;
+    top: 20px;
+    right: 20px;
+  }
+
+  .link-card-viwes {
+    font-size: 18px;
+  }
+
+  .views-icon,
+  .long-link-icon,
+  .log-url-icon {
+    height: 18px;
+  }
+ 
+
+  .short-url-link,
+  .target-url-link {
+    font-size: 16px;
+  }
+
+  .link-key {
+    font-size: 16px;
+  }
+  .link-card-views-text {
+    display: none;
+  }
+  .card-timestamps {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    margin: 0;
+  }
+}

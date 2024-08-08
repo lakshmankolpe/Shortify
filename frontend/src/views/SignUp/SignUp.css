@@ -1,24 +1,21 @@
-.signup-main-container{
+.signup-main-container {
   background-color: white;
   width: 35%;
-  margin: 10% auto;
+  margin: 8% auto;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 5px 1px grey;
   border: 3px solid #ff8e3c;
 }
 
-
 .app-title {
   text-align: center;
-  
 }
 
 .user-input-form {
   background-color: white;
   width: 100%;
   margin: 0 auto;
- 
 }
 
 .user-signup-input {
@@ -31,8 +28,9 @@
   border-radius: 4px;
   border: 2px solid rgb(35, 176, 232);
 }
-.user-signup-input:focus, .use:active{
-    outline: none;
+.user-signup-input:focus,
+.use:active {
+  outline: none;
 }
 
 .register-button {
@@ -49,28 +47,49 @@
   background-color: #6800b3;
 }
 
-.register-button:hover{
+.register-button:hover {
   /* box-shadow: 0 0 5px 1px white; */
   background-color: #8600e6;
   transform: scale(1.05);
   transition: 0.1s;
 }
-.login-link{
+.login-link {
   display: block;
   text-align: center;
   margin: 10px;
   font-size: 20px;
-
 }
-
 
 /*  media queries  */
 
-
-@media screen and (min-width: 993px) and (max-width: 1200px){
-  .signup-main-container{
-   width: 45%;
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .signup-main-container {
+    width: 45%;
     margin: 10% auto;
-   
+  }
 }
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .signup-main-container {
+    width: 55%;
+    margin: 14% auto;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .signup-main-container {
+    width: 67%;
+    margin: 15% auto;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 601px) {
+  .signup-main-container {
+    width: 80%;
+    margin: 20% auto;
+  }
+  .user-signup-input {
+    width: 86%;
+    font-size: 18px;
+  }
+  .register-button {
+    margin-top: 40px;
+  }
 }

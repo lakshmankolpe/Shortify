@@ -65,3 +65,40 @@ background-color: #8600e6;
 transition: 0.1s;
 transform: scale(1.05);
 }
+
+
+@media screen and (min-width:992px) and (max-width:1200px){
+  .main-container {
+ width: 60%;
+}
+}
+@media screen and (min-width:769px) and (max-width:993px){
+  .main-container {
+  width: 70%;
+}
+}
+@media screen and (min-width:600px) and (max-width:768px){
+  .main-container {
+  width: 80%;
+}
+.app-paragraph {
+  font-size: 23px;
+  font-weight: 550;
+}
+
+}
+@media screen and (min-width:400px) and (max-width:601px){
+  .main-container {
+  width: 80%;
+  background-color: tomato;
+}
+.app-paragraph {
+  font-size: 20px;
+  font-weight: 550;
+}
+.app-title {
+  font-size: 18px;
+}
+}
+
+
