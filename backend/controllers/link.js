@@ -1,12 +1,16 @@
-import Link from "../models/Link.js";
+import Link from "../models/Link.js"
+import User from "../models/User.js";
+
+
 
 const postLink = async (req, res) => {
-  const { target, slug, title } = req.body;
+  const { target, slug, title, user } = req.body;
 
   const link = new Link({
     target,
     slug,
     title,
+    user
   });
   const savedLink = await link.save();
   res.json({
@@ -16,15 +20,13 @@ const postLink = async (req, res) => {
   });
 };
 
-
-
 const getSlugRedirect = async (req, res) => {
   const { slug } = req.params;
 
   const link = await Link.findOne({ slug });
 
   if (!link) {
-    res.json({
+    return res.status(404).json({
       success: false,
       message: "Link is not found",
     });
@@ -34,4 +36,35 @@ const getSlugRedirect = async (req, res) => {
   res.redirect(link.target);
 };
 
-export { postLink, getSlugRedirect };
+const getLinks = async (req, res) => {
+try {  const { userId } = req.query;
+
+    const user = await User.findById(userId);
+    if (!user) {
+      return res.json({
+        success: false,
+        message: "User Not Found",
+        data: null,
+      });
+    }
+    const allLinks = await Link.find({ user: userId }).sort({createdAt:-1});
+    res.json({
+      success: true,
+      data:allLinks,
+      message: "All Links fetched successfully",
+    });
+  } catch (error) {
+    console.error(error);
+    res.json({
+      success: false,
+      message: "Server error",
+    });
+  }
+};
+
+
+
+
+
+
+export { postLink, getSlugRedirect,getLinks,};

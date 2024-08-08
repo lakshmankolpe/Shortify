@@ -1,12 +1,24 @@
+.signup-main-container{
+  background-color: white;
+  width: 35%;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 1px grey;
+  border: 3px solid #ff8e3c;
+}
+
+
 .app-title {
   text-align: center;
+  
 }
 
 .user-input-form {
   background-color: white;
-  width: 30%;
+  width: 100%;
   margin: 0 auto;
-  padding: 20px;
+ 
 }
 
 .user-signup-input {
@@ -16,6 +28,7 @@
   height: 40px;
   font-size: 20px;
   padding: 0 15px;
+  border-radius: 4px;
   border: 2px solid rgb(35, 176, 232);
 }
 .user-signup-input:focus, .use:active{
@@ -24,8 +37,40 @@
 
 .register-button {
   display: block;
-  margin: 0 auto;
+  margin: 20px auto;
+  margin-top: 50px;
   cursor: pointer;
-  padding: 5px 30px;
-  border-radius: 3px;
+  font-size: 15px;
+  padding: 7px 40px;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+  color: white;
+  background-color: #6800b3;
+}
+
+.register-button:hover{
+  /* box-shadow: 0 0 5px 1px white; */
+  background-color: #8600e6;
+  transform: scale(1.05);
+  transition: 0.1s;
+}
+.login-link{
+  display: block;
+  text-align: center;
+  margin: 10px;
+  font-size: 20px;
+
+}
+
+
+/*  media queries  */
+
+
+@media screen and (min-width: 993px) and (max-width: 1200px){
+  .signup-main-container{
+   width: 45%;
+    margin: 10% auto;
+   
+}
 }

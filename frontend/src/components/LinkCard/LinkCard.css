@@ -1,0 +1,74 @@
+.link-card {
+  background-color: white;
+  padding: 15px;
+  width: 95%;
+
+  margin: 30px auto;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 5px 5px 10px 1px grey;
+}
+
+.card-title {
+  font-size: 20px;
+  margin: 10px 0;
+  margin-top: 0;
+  color: #2d96b9;
+}
+.card-timestamps {
+  position: absolute;
+  right: 10px;
+  bottom: 2px;
+}
+.link-card-viwes {
+  /* position: absolute;
+    top: 10px;
+    right: 20px; */
+  font-size: 20px;
+  font-weight: bold;
+}
+.views-icon {
+  height: 20px;
+  margin-top: 5px;
+}
+
+.link-card-views-text {
+  /* position: absolute;
+    right: 10px;
+    top: 30px; */
+}
+.long-link-icon {
+  height: 20px;
+  margin-top: 10px;
+}
+.log-url-icon{
+    height: 23px;
+}
+.short-url-link {
+  text-decoration: none;
+  color: red;
+  font-size: 18px;
+  
+}
+.target-url-link {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+ 
+}
+.link-key {
+  color: black;
+  font-size: 17px;
+  margin-right: 10px;
+  font-weight: bold;
+
+}
+
+.copy-img-icon {
+  height: 40px;
+  position: absolute;
+  top: 23px;
+  right: 30px;
+  cursor: pointer;
+}
+

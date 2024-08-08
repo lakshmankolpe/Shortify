@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./SignUp.css";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
+import Navbar from "../../components/Navbar/Navbar";
+import { Link } from "react-router-dom";
 
 function SignUp() {
   const [user, setUser] = useState({
@@ -11,8 +13,7 @@ function SignUp() {
   });
 
   const signup = async () => {
-    const response = await axios.post(
-      `${process.env.REACT_APP_API_URL}/signup`,
+    const response = await axios.post(`${process.env.REACT_APP_API_URL}/signup`,
       {
         fullName: user.fullName,
         email: user.email,
@@ -21,17 +22,23 @@ function SignUp() {
     );
     if (response.data.success) {
       toast.success(response.data.message);
+      
       setUser({
         fullName: "",
         email: "",
         password: "",
       });
+      setTimeout(()=>{
+        window.location.href ="/login"
+      })
     } else {
       toast.error(response.data.message);
     }
   };
   return (
-    <div>
+    <>
+    <Navbar/>
+    <div className="signup-main-container">
       <h1 className="app-title"> User SignUp </h1>
       <form className="user-input-form">
         <input
@@ -65,9 +72,10 @@ function SignUp() {
           Register
         </button>
       </form>
+      <Link to="/login" className='login-link'>Already have an account? Login</Link>
       <Toaster />
     </div>
-  );
+    </>);
 }
 
 export default SignUp;
