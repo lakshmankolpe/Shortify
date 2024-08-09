@@ -46,7 +46,7 @@ function Home() {
     else{
     setTimeout(()=>{
       window.location.href="/login"
-    },1000)}
+    },5000)}
   },[])
 
   return (<>
