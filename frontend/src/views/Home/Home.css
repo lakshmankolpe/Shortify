@@ -90,7 +90,6 @@ transform: scale(1.05);
 @media screen and (min-width:400px) and (max-width:601px){
   .main-container {
   width: 80%;
-  background-color: tomato;
 }
 .app-paragraph {
   font-size: 20px;
