@@ -100,4 +100,35 @@ transform: scale(1.05);
 }
 }
 
+@media screen and (min-width: 300px) and (max-width: 400px) {
+  .main-container {
+    width: 85%;
+    margin: 10% auto;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 1px grey;
+    border: 3px solid #ff8e3c;
+  }
+
+  .app-title {
+    font-size: 18px;
+  }
+
+  .app-paragraph {
+    padding-top: 25px;
+    font-size: 20px;
+  }
+
+  .link-input {
+    font-size: 16px;
+    height: 28px;
+  }
+
+  .link-button {
+    font-size: 16px;
+    padding: 5px 30px;
+    margin-top: 30px;
+  }
+}
+
 

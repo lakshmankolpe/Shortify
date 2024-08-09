@@ -68,3 +68,111 @@
 }
 
 
+/* For large devices (desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+  .navbar-main-container {
+    height: 120px;
+  }
+
+  .log-name {
+    font-size: 30px;
+  }
+
+  .search-item {
+    font-size: 22px;
+  }
+
+  .search-item-username,
+  .search-item-logout {
+    font-size: 22px;
+  }
+}
+
+/* For medium devices (tablets, 768px to 1199px) */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .navbar-main-container {
+    height: 90px;
+  }
+
+  .log-name {
+    font-size: 23px;
+  }
+
+  .search-item {
+    font-size: 18px;
+  }
+
+  .search-item-username,
+  .search-item-logout {
+    font-size: 18px;
+  }
+}
+
+/* For small devices (landscape phones, 576px to 767px) */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .navbar-main-container {
+    height: 80px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo-container {
+    width: 100%;
+    justify-content: flex-start;
+    margin: 10px;
+  }
+
+  .log-name {
+    font-size: 22px;
+  }
+
+  .search-item-container {
+    justify-content: flex-start;
+    margin: 10px;
+  }
+
+  .search-item {
+    font-size: 18px;
+    padding: 5px 15px;
+  }
+
+  .search-item-username,
+  .search-item-logout {
+    font-size: 18px;
+  }
+}
+
+/* For extra small devices (portrait phones, less than 576px) */
+@media screen and (max-width: 575px) {
+  .navbar-main-container {
+    height: 70px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo-container {
+    width: 100%;
+    justify-content: flex-start;
+    margin: 5px;
+  }
+
+  .log-name {
+    font-size: 20px;
+  }
+
+  .search-item-container {
+    justify-content: flex-start;
+    margin: 5px;
+  }
+
+  .search-item {
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+
+  .search-item-username,
+  .search-item-logout {
+    font-size: 16px;
+  }
+}
+

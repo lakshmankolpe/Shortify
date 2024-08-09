@@ -112,4 +112,38 @@
   }
 }
 
+@media screen and (min-width: 300px) and (max-width: 400px) {
+  .link-card {
+    width: 90%;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 3px 3px 8px 1px grey;
+  }
+
+  .card-title {
+    font-size: 18px;
+  }
+
+  .link-card-viwes {
+    font-size: 18px;
+  }
+
+  .views-icon, .long-link-icon, .log-url-icon {
+    height: 18px;
+  }
+
+  .short-url-link, .target-url-link {
+    font-size: 16px;
+  }
+
+  .link-key {
+    font-size: 16px;
+  }
+
+  .copy-img-icon {
+    height: 25px;
+    right: 10px;
+  }
+}
 
