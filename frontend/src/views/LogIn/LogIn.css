@@ -82,3 +82,34 @@
     margin: 30% auto;
     }
  }
+
+ /* Media Queries for screen width between 300px and 400px */
+@media screen and (min-width: 300px) and (max-width: 400px) {
+  .login-main-container {
+    width: 80%;
+    margin: 30% auto;
+    padding: 15px;
+    border-width: 3px;
+    box-shadow: 0 0 3px 1px grey;
+  }
+
+  .user-login-input {
+    width: 90%;
+    font-size: 16px;
+    padding:  5px 10px;
+  }
+
+  .login-button {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    margin-top: 30px;
+  }
+
+  .signup-text {
+    font-size: 18px;
+  }
+}
+
+
+ 
