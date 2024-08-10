@@ -3,6 +3,7 @@ import "./Navbar.css";
 import LinkImg from "../../assets/link1.png";
 import { Link } from "react-router-dom";
 import toast from "react-hot-toast";
+import MenuIcon from "./../../assets/menu.png"
 
 function Navbar() {
   const [user, setUser] = useState({});

@@ -19,7 +19,7 @@ function ShowLinks() {
   }, []);
 
   const fetchAllLinks = async (userId) => {
-    console.log("qaaaaa",userId);
+    console.log(userId);
     
     try {
       if(!userId){

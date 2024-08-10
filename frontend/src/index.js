@@ -7,6 +7,7 @@ import LogIn from "./views/LogIn/LogIn";
 import SignUp from "./views/SignUp/SignUp";
 import ShowLinks from "./views/ShowLinks/ShowLinks.js";
 import Navbar from "./components/Navbar/Navbar.js";
+import Footer from "./components/Footer/Footer.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -30,6 +31,11 @@ const router = createBrowserRouter([
   {
     path:"/navbar",
     element:<Navbar/>
+  }
+  ,
+  {
+    path:"/footer",
+    element:<Footer/>
   }
 ]);
 root.render(<RouterProvider router={router} />);

@@ -60,6 +60,7 @@
   color: white;
   font-weight: 600;
    padding: 8px 20px;  border-radius: 20px;
+   cursor: pointer;
  }
  .search-item-logout:hover {
   box-shadow: 0 0 5px 1px white;
