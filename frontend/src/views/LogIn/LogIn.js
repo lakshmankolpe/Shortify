@@ -12,8 +12,8 @@ function LogIn() {
   const login = async () => {
     const response = await axios.post(`${process.env.REACT_APP_API_URL}/login`,
       {
-        email: 'email',
-        password:' password'
+        email: email,
+        password:password,
       }
     );
     if (response.data.success) {
