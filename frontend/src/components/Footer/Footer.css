@@ -2,7 +2,7 @@
   display: flex;
   justify-content:space-between;
   align-items: center;
-  background-color: tomato;
+  background-color: purple;
   height: 30vh;
 }
 
@@ -34,4 +34,8 @@ font-size: 20px;
     font-size: 17px;
     margin: 5px;
     padding: 0;
+}
+.footer-text:hover{
+ color: white;
+ transition: 1s;
 }
