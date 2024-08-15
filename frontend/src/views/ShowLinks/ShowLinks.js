@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import LinkCard from "../../components/LinkCard/LinkCard";
 import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer"
 
 function ShowLinks() {
   const [links, setLinks] = useState([]);
@@ -64,6 +65,7 @@ function ShowLinks() {
       </div>
       <Toaster />
     </div>
+    <Footer/>
     </>);
 }
 
