@@ -29,7 +29,7 @@ function Navbar() {
           generate
         </Link> */}
         <Link to="/showlinks" className="search-item">
-          my Links
+          My Links
         </Link>
         <span className="search-item-username">{user.fullName}</span>
         <span className="search-item-logout" onClick={()=>{

@@ -3,7 +3,7 @@ import "./Footer.css";
 import LogoImg from "./../../assets/link1.png";
 
 function Footer() {
-  return (
+  return (<>
     <div className="footer-main-container">
       <div className="footer-logo-item-container">
         <img src={LogoImg} className="logo-icon" />
@@ -20,11 +20,9 @@ function Footer() {
       </div>
       
       <div className="footer-item">
-        <h3 className="footer-text">+91 9284528848</h3>
-        <h3 className="footer-text"> Shortify912@gmail.com</h3>
-        <h3 className="footer-text">
-          © 2024 Shortifylink. All rights reserved.
-        </h3>
+        <h3 className="footer-text">📞+91 9284528848</h3>
+        <h3 className="footer-text"> ✉️Shortify912@gmail.com</h3>
+        <h3 className="footer-text"> 🫙© 2024 Shortifylink. All rights reserved.</h3>
       </div>
       <div className="footer-item">
         <h3 className="footer-text">Privacy Policy</h3>
@@ -32,6 +30,8 @@ function Footer() {
         <h3 className="footer-text">Contact Us</h3>
       </div>
     </div>
+   
+   </>  
   );
 }
 

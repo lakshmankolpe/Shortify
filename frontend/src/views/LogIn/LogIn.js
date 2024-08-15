@@ -4,6 +4,7 @@ import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
 import Navbar from "../../components/Navbar/Navbar";
 import { Link } from "react-router-dom";
+import Footer from "../../components/Footer/Footer";
 
 function LogIn() {
   const [email, setEmail] = useState("");
@@ -60,8 +61,10 @@ function LogIn() {
         </button>
         <Link to="/signup" className="signup-text">Don't have an account? Signup</Link>
       </form>
+      
       <Toaster />
     </div>
+    <Footer/>
     </>);
 }
 

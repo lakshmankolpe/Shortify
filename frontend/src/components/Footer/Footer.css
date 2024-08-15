@@ -1,41 +1,98 @@
 .footer-main-container {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   background-color: purple;
   height: 30vh;
 }
 
 .footer-item {
   text-align: start;
-
   height: 15vh;
   width: 21.5%;
-  
 }
 .footer-logo-item-container {
   height: 15vh;
   width: 10%;
- display: flex;
+  display: flex;
   flex-direction: column;
-align-items: center;
- 
+  align-items: center;
 }
 .logo-icon {
   height: 60px;
 }
-.logo-text{
-margin: 0;
-font-size: 20px;
+.logo-text {
+  margin: 0;
+  font-size: 20px;
+  color: white;
+}
+.logo-text:hover{
+  color: red;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.footer-text {
+  font-size: 17px;
+  margin: 5px;
+  padding: 0;
+  color: white;
+}
+.footer-text:hover {
+  color: red;
+  transition: 0.2s;
+  cursor: pointer;
 }
 
 
-.footer-text{
-    font-size: 17px;
-    margin: 5px;
-    padding: 0;
+/* Media Query for Tablets (768px and up) */
+@media (max-width: 1024px) {
+  .footer-item {
+    width: 45%; /* Adjust width for better alignment */
+    margin-bottom: 20px; /* Add spacing between items */
+  }
+
+  .footer-logo-item-container {
+    width: 20%; /* Increase width for logo container */
+  }
 }
-.footer-text:hover{
- color: white;
- transition: 1s;
+
+/* Media Query for Mobile (480px and up) */
+@media (max-width: 768px) {
+  .footer-main-container {
+    flex-direction: column; /* Stack items vertically */
+    height: auto; /* Adjust height */
+    align-items: flex-start;
+  }
+
+  .footer-item {
+    width: 100%; /* Full width for each item */
+    text-align: center; /* Center text */
+    margin-bottom: 10px; /* Add spacing between items */
+  }
+
+  .footer-logo-item-container {
+    width: 100%; /* Full width for logo container */
+    margin-bottom: 20px; /* Add spacing below logo */
+  }
+
+  .logo-icon {
+    height: 50px; /* Adjust logo size */
+  }
+
+  .logo-text {
+    font-size: 18px; /* Adjust font size */
+  }
+}
+
+/* Media Query for Small Mobile Devices (up to 480px) */
+@media (max-width: 480px) {
+  .footer-item {
+    font-size: 14px; /* Reduce font size */
+  }
+
+  .footer-text {
+    font-size: 15px; /* Adjust text size */
+  }
 }
