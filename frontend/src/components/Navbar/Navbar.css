@@ -85,7 +85,7 @@
     flex-direction: column;
     position: absolute;
     top: 15px;
-    right: 25px;
+    right: 35px;
     background-color: orange;
     padding: 5px;
     border-radius: 3px;
@@ -100,6 +100,7 @@
     margin: 0px;
     font-size: 17px;
     font-weight: 500;
+    color: black;
   }
   .search-item:hover {
     box-shadow: none;
