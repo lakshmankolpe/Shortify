@@ -1,6 +1,5 @@
 .navbar-main-container {
-  /* background-color: #6246ea; */
-  background-color: #4a0080;
+  background-color: #333333;
   height: 100px;
   display: flex;
   justify-content: space-between;
@@ -17,6 +16,7 @@
 }
 .logo-icon {
   height: 50px;
+  margin: 20px;
 }
 .log-name {
   font-size: 25px;
@@ -24,7 +24,6 @@
   color: white;
 }
 .log-name:hover {
-  /* transform: scale(1.05); */
 }
 
 .search-item-container {
@@ -50,130 +49,72 @@
   transform: scale(1.05);
 }
 
-.search-item-username{
+.search-item-username {
   font-size: 20px;
   color: white;
   font-weight: 500;
- }
- .search-item-logout{
+}
+.search-item-logout {
   font-size: 20px;
   color: white;
   font-weight: 600;
-   padding: 8px 20px;  border-radius: 20px;
-   cursor: pointer;
- }
- .search-item-logout:hover {
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.search-item-logout:hover {
   box-shadow: 0 0 5px 1px white;
   transition: 0.1s;
   transform: scale(1.05);
 }
 
-
-/* For large devices (desktops, 1200px and up) */
-@media screen and (min-width: 1200px) {
-  .navbar-main-container {
-    height: 120px;
-  }
-
-  .log-name {
-    font-size: 30px;
-  }
-
-  .search-item {
-    font-size: 22px;
-  }
-
-  .search-item-username,
-  .search-item-logout {
-    font-size: 22px;
-  }
+.menu-icon {
+  width: 30px;
+  cursor: pointer;
+  display: none;
+  margin-right: 20px;
 }
 
-/* For medium devices (tablets, 768px to 1199px) */
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .navbar-main-container {
-    height: 90px;
-  }
-
-  .log-name {
-    font-size: 23px;
-  }
-
-  .search-item {
-    font-size: 18px;
-  }
-
-  .search-item-username,
-  .search-item-logout {
-    font-size: 18px;
-  }
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
 }
-
-/* For small devices (landscape phones, 576px to 767px) */
-@media screen and (min-width: 576px) and (max-width: 767px) {
-  .navbar-main-container {
-    height: 80px;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .logo-container {
-    width: 100%;
-    justify-content: flex-start;
-    margin: 10px;
-  }
-
-  .log-name {
-    font-size: 22px;
-  }
 
   .search-item-container {
-    justify-content: flex-start;
-    margin: 10px;
-  }
-
-  .search-item {
-    font-size: 18px;
-    padding: 5px 15px;
-  }
-
-  .search-item-username,
-  .search-item-logout {
-    font-size: 18px;
-  }
-}
-
-/* For extra small devices (portrait phones, less than 576px) */
-@media screen and (max-width: 575px) {
-  .navbar-main-container {
-    height: 70px;
+    display: none;
     flex-direction: column;
-    align-items: flex-start;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    background-color: orange;
+    padding: 5px;
+    border-radius: 3px;
+    height: 130px;
   }
 
-  .logo-container {
-    width: 100%;
-    justify-content: flex-start;
-    margin: 5px;
-  }
-
-  .log-name {
-    font-size: 20px;
-  }
-
-  .search-item-container {
-    justify-content: flex-start;
-    margin: 5px;
+  .search-item-container.active {
+    display: flex;
   }
 
   .search-item {
-    font-size: 16px;
-    padding: 5px 10px;
+    margin: 0px;
+    font-size: 17px;
+    font-weight: 500;
   }
-
-  .search-item-username,
+  .search-item:hover {
+    box-shadow: none;
+  }
   .search-item-logout {
-    font-size: 16px;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0;
+  }
+  .search-item-logout:hover {
+    box-shadow: none;
+  }
+  .search-item-username {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0;
   }
 }
-

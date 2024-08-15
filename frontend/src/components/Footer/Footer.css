@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background-color: purple;
+  background-color: #333333;
   height: 30vh;
 }
 
@@ -28,7 +28,7 @@
   color: white;
 }
 .logo-text:hover{
-  color: red;
+  color: #8080ff;
   transition: 0.2s;
   cursor: pointer;
 }
@@ -40,7 +40,7 @@
   color: white;
 }
 .footer-text:hover {
-  color: red;
+  color: #8080ff;
   transition: 0.2s;
   cursor: pointer;
 }
