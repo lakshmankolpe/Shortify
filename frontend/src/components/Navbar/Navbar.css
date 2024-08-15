@@ -86,7 +86,7 @@
     position: absolute;
     top: 15px;
     right: 35px;
-    background-color: orange;
+    background-color: #4da6ff;
     padding: 5px;
     border-radius: 3px;
     height: 130px;
@@ -99,7 +99,7 @@
   .search-item {
     margin: 0px;
     font-size: 17px;
-    font-weight: 500;
+    font-weight: 550;
     color: black;
   }
   .search-item:hover {
@@ -107,15 +107,17 @@
   }
   .search-item-logout {
     font-size: 17px;
-    font-weight: 500;
+    font-weight: 550;
     margin: 0;
+    color: #000;
   }
   .search-item-logout:hover {
     box-shadow: none;
   }
   .search-item-username {
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 550;
     margin: 0;
+    color: #000;
   }
 }
