@@ -1,6 +1,9 @@
 import React from "react";
 import "./Footer.css";
 import LogoImg from "./../../assets/link1.png";
+import LoctionsImg from "./../../assets/loction.png"
+import { Link } from 'react-router-dom';
+
 
 function Footer() {
   return (<>
@@ -11,6 +14,7 @@ function Footer() {
       </div>
 
       <div className="footer-item">
+      <img src={LoctionsImg} className="loction-icon"/>
         <h3 className="footer-text">
           Address:
           <br />
@@ -21,11 +25,11 @@ function Footer() {
       
       <div className="footer-item">
         <h3 className="footer-text">📞+91 9284528848</h3>
-        <h3 className="footer-text"> ✉️Shortify912@gmail.com</h3>
-        <h3 className="footer-text"> 🫙© 2024 Shortifylink. All rights reserved.</h3>
+        <h3 className="footer-text"> ✉️ Shortify912@gmail.com</h3>
+        <h3 className="footer-text"> © 2024 Shortifylink. All rights reserved.</h3>
       </div>
       <div className="footer-item">
-        <h3 className="footer-text">Privacy Policy</h3>
+        <Link to={"/policy"} className="footer-text">Privacy Policy</Link>
         <h3 className="footer-text">Terms and Condition</h3>
         <h3 className="footer-text">Contact Us</h3>
       </div>

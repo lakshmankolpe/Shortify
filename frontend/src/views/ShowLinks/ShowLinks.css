@@ -1,6 +1,6 @@
 .showall-link-container{
      height: 80vh;
-     width: 98%;
+     width: 75%;
      margin: 0 auto;
      overflow-y:scroll ;
      border-radius: 10px;
@@ -10,6 +10,12 @@
 .showalllinks-title{
     text-align: center;
     color: #2d96b9;
+}
+.show-link-text{
+  font-size: 20px;
+  color: gray;
+  display: block;
+  text-align: center;
 }
 
 @media screen and (min-width: 300px) and (max-width: 400px) {

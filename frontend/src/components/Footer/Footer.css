@@ -3,31 +3,38 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #333333;
+  background-color: black;
   height: 30vh;
 }
 
 .footer-item {
   text-align: start;
   height: 15vh;
-  width: 21.5%;
+  width: 20.5%;
+  position: relative;
 }
+
 .footer-logo-item-container {
   height: 15vh;
   width: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 5%;
 }
+
 .logo-icon {
   height: 60px;
+  margin: 2px;
 }
+
 .logo-text {
   margin: 0;
   font-size: 20px;
   color: white;
 }
-.logo-text:hover{
+
+.logo-text:hover {
   color: #8080ff;
   transition: 0.2s;
   cursor: pointer;
@@ -38,61 +45,72 @@
   margin: 5px;
   padding: 0;
   color: white;
+  text-decoration: none;
 }
+
 .footer-text:hover {
   color: #8080ff;
   transition: 0.2s;
   cursor: pointer;
 }
-
+.loction-icon {
+  height: 35px;
+  position: absolute;
+  top: -9px;
+  left: -38px;
+  cursor: pointer;
+}
+.loction-icon:hover {
+  transition: 0.3s;
+  transform: scale(1.05);
+}
 
 /* Media Query for Tablets (768px and up) */
 @media (max-width: 1024px) {
   .footer-item {
-    width: 45%; /* Adjust width for better alignment */
-    margin-bottom: 20px; /* Add spacing between items */
+    width: 45%;
+    margin-bottom: 20px;
   }
 
   .footer-logo-item-container {
-    width: 20%; /* Increase width for logo container */
+    width: 20%;
   }
 }
 
 /* Media Query for Mobile (480px and up) */
 @media (max-width: 768px) {
   .footer-main-container {
-    flex-direction: column; /* Stack items vertically */
-    height: auto; /* Adjust height */
+    flex-direction: column;
+    height: auto;
     align-items: flex-start;
   }
 
   .footer-item {
-    width: 100%; /* Full width for each item */
-    text-align: center; /* Center text */
-    margin-bottom: 10px; /* Add spacing between items */
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
   }
 
   .footer-logo-item-container {
-    width: 100%; /* Full width for logo container */
-    margin-bottom: 20px; /* Add spacing below logo */
+    width: 100%;
+    margin-bottom: 20px;
   }
 
   .logo-icon {
-    height: 50px; /* Adjust logo size */
+    height: 50px;
   }
 
   .logo-text {
-    font-size: 18px; /* Adjust font size */
+    font-size: 18px;
   }
 }
 
-/* Media Query for Small Mobile Devices (up to 480px) */
 @media (max-width: 480px) {
   .footer-item {
-    font-size: 14px; /* Reduce font size */
+    font-size: 14px;
   }
 
   .footer-text {
-    font-size: 15px; /* Adjust text size */
+    font-size: 15px;
   }
 }

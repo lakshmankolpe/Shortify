@@ -5,7 +5,7 @@
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 5px 1px grey;
-  border: 3px solid #ff8e3c;
+  border: 3px solid #11a9dc;
 }
 
 .app-title {
@@ -43,13 +43,13 @@
   border-radius: 5px;
   font-weight: bold;
   border: none;
-  color: white;
-  background-color: #6800b3;
+  color: #09bbf6;
+  background-color: #595959;
 }
 
 .register-button:hover {
   /* box-shadow: 0 0 5px 1px white; */
-  background-color: #8600e6;
+  background-color: #262626;
   transform: scale(1.05);
   transition: 0.1s;
 }
