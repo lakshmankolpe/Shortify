@@ -1,4 +1,5 @@
 import React from "react";
+import "./Policy.css"
 
 function Policy() {
   return (
