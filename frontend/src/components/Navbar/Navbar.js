@@ -27,6 +27,8 @@ function Navbar() {
     }, 2000);
   };
   return (
+
+
     <div className="navbar-main-container">
       <div className="logo-container">
         <img src={LinkImg} className="logo-icon" />
@@ -62,6 +64,8 @@ function Navbar() {
         )}
       </div>
     </div>
+
+    
   );
 }
 
