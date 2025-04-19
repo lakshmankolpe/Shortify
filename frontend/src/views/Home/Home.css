@@ -106,7 +106,6 @@ transform: scale(1.05);
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 0 3px 1px grey;
-    border: 3px solid #ff8e3c;
   }
 
   .app-title {
