@@ -1,37 +1,39 @@
 .navbar-main-container {
   background-color:#518191;
-  height: 100px;
+  height:150px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
 }
 
 .logo-container {
-  width: 13%;
-  height: 100px;
+  width: 100%;
+  background-color: tomato;
+  height: 70px;
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  margin: 20px;
+  position: relative;
+}
+.login-user-container{
+  position: absolute;
+  right: 0px;
 }
 .logo-icon {
-  height: 50px;
-  margin: 20px;
+  padding: 20px;
 }
 .log-name {
   font-size: 25px;
   font-weight: bold;
   color: white;
 }
-.log-name:hover {
-}
+
+
 
 .search-item-container {
   height: 100px;
-  margin: 20px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
 }
 .search-item {
   margin: 20px;

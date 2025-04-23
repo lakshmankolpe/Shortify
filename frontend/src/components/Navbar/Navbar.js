@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar.css";
-import LinkImg from "../../assets/link1.png";
+import LinkImg from "./../../assets/logo.png";
 import { Link } from "react-router-dom";
 import toast from "react-hot-toast";
 import MenuIcon from "./../../assets/menu.png";
@@ -29,11 +29,28 @@ function Navbar() {
   return (
 
 
+
+
     <div className="navbar-main-container">
       <div className="logo-container">
         <img src={LinkImg} className="logo-icon" />
         <span className="log-name">Shortify </span>
+
+     <div className="login-user-container">   {user.fullName ? (
+          <>
+            <span className="search-item-username">{user.fullName}</span>
+            <span className="search-item-logout" onClick={logouthandel}>
+              Logout
+            </span>
+          </>
+        ) : (
+          <Link to="/login" className="search-item" onClick={toggleMenu}>
+            Login
+          </Link>
+        )}</div>
       </div>
+
+
 
       <img
         src={MenuIcon}
@@ -48,20 +65,13 @@ function Navbar() {
         </Link>
 
         <Link to="/showlinks" className="search-item" onClick={toggleMenu}>
+          About
+        </Link>
+
+        <Link to="/showlinks" className="search-item" onClick={toggleMenu}>
           My Links
         </Link>
-        {user.fullName ? (
-          <>
-            <span className="search-item-username">{user.fullName}</span>
-            <span className="search-item-logout" onClick={logouthandel}>
-              Logout
-            </span>
-          </>
-        ) : (
-          <Link to="/login" className="search-item" onClick={toggleMenu}>
-            Login
-          </Link>
-        )}
+       
       </div>
     </div>
 
