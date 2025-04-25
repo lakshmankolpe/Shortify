@@ -38,9 +38,9 @@ function Navbar() {
 
      <div className="login-user-container">   {user.fullName ? (
           <>
-            <span className="search-item-username">{user.fullName}</span>
+            <span className="search-item-username">{user.fullName} </span>
             <span className="search-item-logout" onClick={logouthandel}>
-              Logout
+            👈Logout
             </span>
           </>
         ) : (
