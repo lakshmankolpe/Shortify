@@ -10,13 +10,14 @@ function Home() {
     title: "",
     target: "",
     slug: "",
-    user:null,
+    user: null,
   });
 
   const ShortenURL = async () => {
     try {
       const response = await axios.post(
-        `${process.env.REACT_APP_API_URL}/link`,linkData 
+        `${process.env.REACT_APP_API_URL}/link`,
+        linkData
       );
       if (response.data.success) {
         toast.success("Link Shortened Successfully");
@@ -25,13 +26,11 @@ function Home() {
           title: "",
           target: "",
           slug: "",
-          user:null
-  
+          user: null,
         });
-        setTimeout(()=>{
-          window.location.href= "/showlinks"
-        })
-        
+        setTimeout(() => {
+          window.location.href = "/showlinks";
+        });
       } else {
         toast.error(response.data.message);
       }
@@ -39,75 +38,80 @@ function Home() {
       toast.error(`Failed to shorten link: ${error.message}`);
     }
   };
-  useEffect(()=>{
-    const currentUser = JSON.parse(localStorage.getItem('currentUser'));
-    if(currentUser){
-    setLinkData({...linkData,user:currentUser._id})
+  useEffect(() => {
+    const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+    if (currentUser) {
+      setLinkData({ ...linkData, user: currentUser._id });
+    } else {
+      setTimeout(() => {
+        window.location.href = "/login";
+      }, 2000);
     }
-    else{
-    setTimeout(()=>{
-      window.location.href="/login"
-    },2000)}
-  },[])
+  }, []);
 
-  return (<>
-    <Navbar/>
-    <p className="app-paragraph">
-    Save time and simplify sharing by converting long URLs into short, easy-to-share links effortlessly.</p>
-    <div className="main-container">
-    <h1 className="app-title">🔗 Shorten Your Links In Seconds</h1>
-      
-      
+  const [links, setLinks] = useState([]);
 
-      <form className="link-form">
-        <input
-          type="text"
-          placeholder="Title"
-          value={linkData.title}
-          onChange={(e) => {
-            setLinkData({
-              ...linkData,
-              title: e.target.value,
-            });
-          }}
-          className="link-input"
-        />
+  return (
+    <>
+      <Navbar />
+      <p className="app-paragraph">
+        Save time and simplify sharing by converting long URLs into short,
+        easy-to-share links effortlessly.
+      </p>
+      <div className="main-container">
+        <h1 className="app-title">🔗 Shorten Your Links In Seconds</h1>
 
-        <input
-          type="text"
-          placeholder="Target URL"
-          value={linkData.target}
-          onChange={(e) => {
-            setLinkData({
-              ...linkData,
-              target: e.target.value,
-            });
-          }}
-          className="link-input"
-        />
+        <form className="link-form">
+          <input
+            type="text"
+            placeholder="Title"
+            value={linkData.title}
+            onChange={(e) => {
+              setLinkData({
+                ...linkData,
+                title: e.target.value,
+              });
+            }}
+            className="link-input"
+          />
 
-        <input
-          type="text"
-          placeholder="Slug"
-          value={linkData.slug}
-          onChange={(e) => {
-            setLinkData({
-              ...linkData,
-              slug: e.target.value,
-            });
-          }}
-          className="link-input"
-        />
+          <input
+            type="text"
+            placeholder="Target URL"
+            value={linkData.target}
+            onChange={(e) => {
+              setLinkData({
+                ...linkData,
+                target: e.target.value,
+              });
+            }}
+            className="link-input"
+          />
 
-        <button type="button" className="link-button" onClick={ShortenURL}>
-          Generate Link
-        </button>
-      </form>
-     
-      <Toaster />
-    </div>
-    <Footer/>
-    </>);
+          <input
+            type="text"
+            placeholder="Slug"
+            value={linkData.slug}
+            onChange={(e) => {
+              setLinkData({
+                ...linkData,
+                slug: e.target.value,
+              });
+            }}
+            className="link-input"
+          />
+
+          <button type="button" className="link-button" onClick={ShortenURL}>
+            Generate Link
+          </button>
+        </form>
+
+        <Toaster />
+      </div>
+
+      <Footer />
+    </>
+  );
 }
 
 export default Home;
