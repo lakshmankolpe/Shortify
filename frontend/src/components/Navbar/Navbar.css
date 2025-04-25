@@ -1,5 +1,5 @@
 .navbar-main-container {
-  background-color:#518191;
+  background-color:#1f1212;
   height:150px;
   display: flex;
   flex-wrap: wrap;
@@ -8,15 +8,16 @@
 
 .logo-container {
   width: 100%;
-  background-color: tomato;
-  height: 70px;
+  background-color:tomato;
+  height: 50px;
+  padding-top: 20px;
   display: flex;
   align-items: center;
   position: relative;
 }
 .login-user-container{
   position: absolute;
-  right: 0px;
+  right: 20px;
 }
 .logo-icon {
   padding: 20px;
