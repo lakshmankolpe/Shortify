@@ -87,6 +87,7 @@
   .menu-icon {
     display: block;
     margin-left: 92%;
+    width: 25px;
   }
 
   .search-item-container {
@@ -137,5 +138,16 @@
 @media (max-width: 450px) {
   .search-item-username {
     display: block;
+  }
+  .navbar-main-container {
+    height: 100px;
+  }
+  .menu-icon {
+    display: block;
+    margin-left: 92%;
+  }
+  .login-user-container {
+    position: absolute;
+    right: 0px;
   }
 }
