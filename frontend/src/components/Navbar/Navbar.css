@@ -89,6 +89,9 @@
     margin-left: 92%;
     width: 25px;
   }
+  .navbar-main-container {
+    height: 100px;
+  }
 
   .search-item-container {
     display: none;
