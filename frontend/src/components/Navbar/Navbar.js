@@ -42,7 +42,7 @@ function Navbar() {
             <span className="search-item-username">{user.fullName} </span>
             <span className="search-item-logout" onClick={logouthandel}>
             
-            👈Logout
+            Logout
             </span>
           </>
         ) : (
