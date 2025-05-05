@@ -12,7 +12,7 @@
 }
 
 .login-main-container:hover {
-  box-shadow: 0 0 10px 1px #eef1f5;
+  box-shadow: 0 0 10px 1px gray;
 }
 
 .app-log-title {
