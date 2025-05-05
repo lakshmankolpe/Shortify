@@ -9,63 +9,69 @@ import Footer from "../../components/Footer/Footer";
 function LogIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  
+
   const login = async () => {
-    const response = await axios.post(`${process.env.REACT_APP_API_URL}/login`,
+    const response = await axios.post(
+      `${process.env.REACT_APP_API_URL}/login`,
       {
         email: email,
-        password:password,
+        password: password,
       }
     );
     if (response.data.success) {
       toast.success(response.data.message);
-      
-      localStorage.setItem('currentUser', JSON.stringify(response.data.data))
+
+      localStorage.setItem("currentUser", JSON.stringify(response.data.data));
       toast.loading("Redirecting to dashboard");
       setTimeout(() => {
-        window.location.href = '/'
-      }, 3000)
+        window.location.href = "/";
+      }, 3000);
     } else {
       toast.error(response.data.message);
     }
   };
   return (
     <>
-    <Navbar/>
-    <div className="login-main-container">
-      <h1 className="app-title">User LogIn</h1>
+      <Navbar />
+      <div className="login-main-container">
+        <h1 className="app-log-title">Login</h1>
 
-      <form className="user-login-input-form">
-        <input
-          type="Email"
-          placeholder="Enter Your Email"
-          className="user-login-input"
-          value={email}
-          onChange={(e) => {
-            setEmail(e.target.value);
-          }}
-        />
+        <form className="user-login-input-form">
+          <input
+            type="Email"
+            placeholder="Email"
+            className="user-login-input"
+            value={email}
+            onChange={(e) => {
+              setEmail(e.target.value);
+            }}
+          />
+          <hr />
+          <input
+            type="password"
+            placeholder="Password"
+            className="user-login-input"
+            value={password}
+            onChange={(e) => {
+              setPassword(e.target.value);
+            }}
+          />
+          <hr />
+          <button type="button" className="login-button" onClick={login}>
+            LogIn
+          </button>
+          <span className="signup-text">Don't have an account?</span>{" "}
+          <Link to="/signup" className="signup-text">
+            {" "}
+            Signup
+          </Link>
+        </form>
 
-        <input
-          type="password"
-          placeholder="Enter Your Password"
-          className="user-login-input"
-          value={password}
-          onChange={(e) => {
-            setPassword(e.target.value);
-          }}
-        />
-
-        <button type="button" className="login-button" onClick={login}>
-          LogIn
-        </button>
-        <Link to="/signup" className="signup-text">Don't have an account? Signup</Link>
-      </form>
-      
-      <Toaster />
-    </div>
-    <Footer/>
-    </>);
+        <Toaster />
+      </div>
+      <Footer />
+    </>
+  );
 }
 
 export default LogIn;
