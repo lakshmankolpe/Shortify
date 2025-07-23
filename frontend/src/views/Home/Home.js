@@ -58,55 +58,89 @@ function Home() {
         Save time and simplify sharing by converting long URLs into short,
         easy-to-share links effortlessly.
       </p>
-      <div className="main-container">
-        <h1 className="app-title">🔗 Shorten Your Links In Seconds</h1>
 
-        <form className="link-form">
-          <input
-            type="text"
-            placeholder="Title"
-            value={linkData.title}
-            onChange={(e) => {
-              setLinkData({
-                ...linkData,
-                title: e.target.value,
-              });
-            }}
-            className="link-input"
-          />
 
-          <input
-            type="text"
-            placeholder="Target URL"
-            value={linkData.target}
-            onChange={(e) => {
-              setLinkData({
-                ...linkData,
-                target: e.target.value,
-              });
-            }}
-            className="link-input"
-          />
 
-          <input
-            type="text"
-            placeholder="Slug"
-            value={linkData.slug}
-            onChange={(e) => {
-              setLinkData({
-                ...linkData,
-                slug: e.target.value,
-              });
-            }}
-            className="link-input"
-          />
 
-          <button type="button" className="link-button" onClick={ShortenURL}>
-            Generate Link
-          </button>
-        </form>
+      <div className="home-main-container">
+        <div className="home-information-container">
+          <h2>Simple and fast URL shortener!</h2>
+          <p className="information-text">
+            ShortURL allows to shorten long links from Instagram, Facebook,
+            YouTube, Twitter, Linked In, WhatsApp, TikTok, blogs and any domain
+            name. Just paste the long URL and click the Shorten URL button. On
+            the next page, copy the shortened URL and share it on sites, chat
+            and emails. After shortening the URL, check how many clicks it
+            received.
+          </p>
+          <h2>Shorten, share and track</h2>
+          <p className="information-text">Your shortened URLs can be used in publications,
+             documents, advertisements, blogs, forums, instant messages, 
+             and other locations. Track statistics for your business and projects by monitoring 
+             the number of hits from your URL with our click counter.</p>
+        </div>
 
-        <Toaster />
+
+
+
+
+
+        <div className="home-form-container">
+          <div className="main-container">
+            <h1 className="app-title">🔗 Shorten Your Links In Seconds</h1>
+
+            <form className="link-form">
+              <input
+                type="text"
+                placeholder="Title"
+                value={linkData.title}
+                onChange={(e) => {
+                  setLinkData({
+                    ...linkData,
+                    title: e.target.value,
+                  });
+                }}
+                className="link-input"
+              />
+
+              <input
+                type="text"
+                placeholder="Target URL"
+                value={linkData.target}
+                onChange={(e) => {
+                  setLinkData({
+                    ...linkData,
+                    target: e.target.value,
+                  });
+                }}
+                className="link-input"
+              />
+
+              <input
+                type="text"
+                placeholder="Slug"
+                value={linkData.slug}
+                onChange={(e) => {
+                  setLinkData({
+                    ...linkData,
+                    slug: e.target.value,
+                  });
+                }}
+                className="link-input"
+              />
+
+              <button
+                type="button"
+                className="link-button"
+                onClick={ShortenURL}
+              >
+                Generate Link ➡️
+              </button>
+            </form>
+
+            <Toaster />
+          </div>
+        </div>
       </div>
 
       <Footer />
