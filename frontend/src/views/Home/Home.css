@@ -93,7 +93,7 @@ padding: 20px;
 }
 
 .link-button:hover {
-  background-color: #262626;
+  background-color: #1a8cff;
   transition: 0.1s;
   transform: scale(1.05);
 }
