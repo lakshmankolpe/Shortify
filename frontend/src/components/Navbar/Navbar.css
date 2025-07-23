@@ -50,7 +50,7 @@
 }
 
 .search-item:hover {
-  box-shadow: 0 0 5px 1px white;
+  box-shadow: 0 0 5px 1px #F0F0D7;
   transition: 0.1s;
   transform: scale(1.05);
 }
