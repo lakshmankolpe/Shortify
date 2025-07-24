@@ -1,0 +1,26 @@
+.feature-card{
+  height: 200px;
+  width: 300px;
+  margin: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
+  /* box-shadow: 0 0 5px 1px gray; */
+}
+
+.featur-icon{
+    height: 95px;
+    display: block;
+    margin: 0 auto;
+
+   
+}
+.feature-title{
+    text-align: center;
+    color: rgb(60, 58, 58);
+
+}
+.feature-text{
+    text-align: center;
+    font-size: 18px;
+    color: rgb(114, 112, 112);
+}

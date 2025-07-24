@@ -4,6 +4,7 @@ import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
+import FeatureCard from "../../components/FeatureCard/FeatureCard";
 
 function Home() {
   const [linkData, setLinkData] = useState({
@@ -59,9 +60,6 @@ function Home() {
         easy-to-share links effortlessly.
       </p>
 
-
-
-
       <div className="home-main-container">
         <div className="home-information-container">
           <h2>Simple and fast URL shortener!</h2>
@@ -74,16 +72,13 @@ function Home() {
             received.
           </p>
           <h2>Shorten, share and track</h2>
-          <p className="information-text">Your shortened URLs can be used in publications,
-             documents, advertisements, blogs, forums, instant messages, 
-             and other locations. Track statistics for your business and projects by monitoring 
-             the number of hits from your URL with our click counter.</p>
+          <p className="information-text">
+            Your shortened URLs can be used in publications, documents,
+            advertisements, blogs, forums, instant messages, and other
+            locations. Track statistics for your business and projects by
+            monitoring the number of hits from your URL with our click counter.
+          </p>
         </div>
-
-
-
-
-
 
         <div className="home-form-container">
           <div className="main-container">
@@ -141,6 +136,38 @@ function Home() {
             <Toaster />
           </div>
         </div>
+      </div>
+
+      <div className="feature-container">
+        <FeatureCard 
+        image={"https://www.shorturl.at/img/icon-like.png"}
+        title={"Easy"} 
+        featurText={"ShortURL is easy and fast, enter the long link to get your shortened link"}
+        />
+        <FeatureCard
+         image={"https://www.shorturl.at/img/icon-url.png"}
+          title={"Shortened"} 
+          featurText={"Use any link, no matter what size, ShortURL always shortens"}
+          />
+        <FeatureCard
+         image={"https://www.shorturl.at/img/icon-secure.png"}
+          title={"Secure"} 
+          featurText={"It is fast and secure, our service has HTTPS protocol and data encryption"}
+          />
+        <FeatureCard
+          image={"https://www.shorturl.at/img/icon-statistics.png"}
+           title={"Statistics"} 
+           featurText={" Check the number of clicks that your shortened URL received"}
+        />
+        <FeatureCard image={"https://www.shorturl.at/img/icon-unique.png"}
+        featurText={"All links that try to disseminate spam, viruses and malware are deleted"}
+         title={"Reliable"} 
+         />
+        <FeatureCard
+          image={"https://www.shorturl.at/img/icon-responsive.png"}
+           title={"Devices"} 
+           featurText={"Compatible with smartphones, tablets and desktop"}
+        />
       </div>
 
       <Footer />

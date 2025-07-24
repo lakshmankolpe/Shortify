@@ -26,6 +26,22 @@ padding: 20px;
 }
 
 
+.feature-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 600px;
+  width: 90%;
+  margin: 0 auto;
+  /* background-color: tomato; */
+  margin-bottom: 30px;
+
+}
+
+
+
+
 
 
 
