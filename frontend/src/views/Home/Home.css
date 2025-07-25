@@ -2,31 +2,25 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 7%;
+  margin-top: 2%;
 }
 
 .home-information-container {
-  height: 485px;
   width: 40%;
   margin: 10px;
 }
 
 .home-form-container {
-
-width: 35%;
-padding: 20px;
-  
+  width: 35%;
+  padding: 20px;
   margin: 10px;
-
 }
 
 .information-text {
   font-size: 18px;
-
 }
 
-
-.feature-container{
+.feature-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,30 +28,22 @@ padding: 20px;
   height: 600px;
   width: 90%;
   margin: 0 auto;
-  /* background-color: tomato; */
   margin-bottom: 30px;
-
 }
 
-
-
-
-
-
-
 .main-container {
-  /* background-color: #F0F0D7; */
- height: 400px;
+  background-color: white;
+  height: 380px;
   margin: 5% auto;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 5px 1px grey;
+  box-shadow: 0 0 1px 3px #e2e4e9;
 }
 
 .app-title {
   font-size: 25px;
   text-align: center;
-  color: #AAB99A;
+  color: #aab99a;
 }
 
 .app-paragraph {
@@ -66,13 +52,12 @@ padding: 20px;
   font-size: 27px;
   font-weight: 550;
   color: #798679;
-
 }
 
 .link-form {
   display: block;
   margin: 0 auto;
-  /* background-color: #F0F0D7; */
+  background-color: white;
   padding: 20px;
   border-radius: 10px;
 }
@@ -114,22 +99,52 @@ padding: 20px;
   transform: scale(1.05);
 }
 
-
-@media screen and (min-width:992px) and (max-width:1200px) {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
   .main-container {
     width: 60%;
   }
-}
 
-@media screen and (min-width:769px) and (max-width:993px) {
-  .main-container {
-    width: 70%;
+  .home-form-container {
+    padding: 0;
+  }
+
+  .information-text {
+    font-size: 17px;
+  }
+
+  .home-form-container {
+    width: 50%;
   }
 }
 
-@media screen and (min-width:600px) and (max-width:768px) {
+@media screen and (min-width: 769px) and (max-width: 993px) {
+  .main-container {
+    width: 70%;
+    height: 370px;
+  }
+
+  .home-form-container {
+    padding: 0;
+  }
+
+  .information-text {
+    font-size: 17px;
+  }
+
+  .home-form-container {
+    width: 50%;
+  }
+
+  .app-paragraph {
+    font-size: 24px;
+    font-weight: 550;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
   .main-container {
     width: 80%;
+    height: 350px;
   }
 
   .app-paragraph {
@@ -137,9 +152,34 @@ padding: 20px;
     font-weight: 550;
   }
 
+  .home-main-container {
+    flex-direction: column;
+  }
+
+  .home-information-container {
+    width: 90%;
+    margin: 0px;
+  }
+
+  .home-form-container {
+    width: 80%;
+    margin: 0px;
+  }
+
+  .information-title {
+    font-size: 23px;
+  }
+
+  .app-title {
+    font-size: 23px;
+  }
+
+  .link-button {
+    font-size: 17px;
+  }
 }
 
-@media screen and (min-width:400px) and (max-width:601px) {
+@media screen and (min-width: 400px) and (max-width: 601px) {
   .main-container {
     width: 80%;
   }
@@ -150,7 +190,39 @@ padding: 20px;
   }
 
   .app-title {
-    font-size: 18px;
+    font-size: 18px !important;
+  }
+
+  .app-paragraph {
+    font-size: 23px;
+    font-weight: 550;
+  }
+
+  .home-main-container {
+    flex-direction: column;
+  }
+
+  .home-information-container {
+    width: 90%;
+    margin: 0px;
+  }
+
+  .home-form-container {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .information-title {
+    font-size: 21px;
+  }
+
+  .link-button {
+    font-size: 16px;
+  }
+
+  .main-container {
+    background-color: white;
+    height: 350px;
   }
 }
 
@@ -164,12 +236,12 @@ padding: 20px;
   }
 
   .app-title {
-    font-size: 18px;
+    font-size: 19px !important;
   }
 
   .app-paragraph {
     padding-top: 25px;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .link-input {
@@ -181,5 +253,41 @@ padding: 20px;
     font-size: 16px;
     padding: 5px 30px;
     margin-top: 30px;
+  }
+
+  .home-main-container {
+    flex-direction: column;
+  }
+
+  .home-information-container {
+    width: 90%;
+    margin: 0px;
+  }
+
+  .home-form-container {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .information-title {
+    font-size: 18px;
+  }
+
+  .information-text {
+    font-size: 16px;
+  }
+
+  .link-button {
+    font-size: 16px;
+  }
+
+  .link-button {
+    padding: 10px 30px;
+    margin-top: 40px;
+  }
+
+  .main-container {
+    background-color: white;
+    height: 370px;
   }
 }

@@ -62,7 +62,7 @@ function Home() {
 
       <div className="home-main-container">
         <div className="home-information-container">
-          <h2>Simple and fast URL shortener!</h2>
+          <h2 className="information-title">Simple and fast URL shortener!</h2>
           <p className="information-text">
             ShortURL allows to shorten long links from Instagram, Facebook,
             YouTube, Twitter, Linked In, WhatsApp, TikTok, blogs and any domain
@@ -71,7 +71,7 @@ function Home() {
             and emails. After shortening the URL, check how many clicks it
             received.
           </p>
-          <h2>Shorten, share and track</h2>
+          <h2 className="information-title">Shorten, share and track</h2>
           <p className="information-text">
             Your shortened URLs can be used in publications, documents,
             advertisements, blogs, forums, instant messages, and other
