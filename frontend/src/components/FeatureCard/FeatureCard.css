@@ -1,26 +1,36 @@
-.feature-card{
-  height: 200px;
-  width: 300px;
-  margin: 10px;
-  margin-left: 40px;
-  margin-right: 40px;
-  /* box-shadow: 0 0 5px 1px gray; */
+.feature-card {
+    height: 200px;
+    width: 300px;
+    margin: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+
 }
 
-.featur-icon{
+.featur-icon {
     height: 95px;
     display: block;
     margin: 0 auto;
 
-   
+
 }
-.feature-title{
+
+.feature-title {
     text-align: center;
     color: rgb(60, 58, 58);
 
 }
-.feature-text{
+
+.feature-text {
     text-align: center;
     font-size: 18px;
     color: rgb(114, 112, 112);
+}
+
+@media screen and (min-width: 769px) and (max-width: 993px) {
+    .feature-card {
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
 }
