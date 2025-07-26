@@ -1,5 +1,5 @@
 .footer-main-container {
-  
+
   background-color: #495049;
   background-blend-mode: multiply;
   display: flex;
@@ -41,6 +41,7 @@
   transition: 0.2s;
   cursor: pointer;
 }
+
 .footer-text {
   font-size: 17px;
   margin: 5px;
@@ -54,6 +55,7 @@
   transition: 0.2s;
   cursor: pointer;
 }
+
 .loction-icon {
   height: 35px;
   position: absolute;
@@ -61,16 +63,19 @@
   left: -38px;
   cursor: pointer;
 }
+
 .loction-icon:hover {
   transition: 0.3s;
   transform: scale(1.05);
 }
+
 .copy-right-text-container {
   text-align: center;
   background-color: #495049;
   background-blend-mode: multiply;
   margin: 0;
   padding-bottom: 10px;
+
 }
 
 /* Media Query for Tablets (768px and up) */
@@ -83,6 +88,11 @@
   .footer-logo-item-container {
     width: 20%;
   }
+}
+
+.copy-right-text-container {
+  padding-top: 60px;
+
 }
 
 /* Media Query for Mobile (480px and up) */
@@ -110,6 +120,11 @@
 
   .logo-text {
     font-size: 18px;
+  }
+
+  .copy-right-text-container {
+    padding-top: 0px;
+
   }
 }
 
