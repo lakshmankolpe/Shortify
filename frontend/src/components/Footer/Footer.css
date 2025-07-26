@@ -1,5 +1,4 @@
 .footer-main-container {
-
   background-color: #495049;
   background-blend-mode: multiply;
   display: flex;
@@ -75,10 +74,8 @@
   background-blend-mode: multiply;
   margin: 0;
   padding-bottom: 10px;
-
 }
 
-/* Media Query for Tablets (768px and up) */
 @media (max-width: 1024px) {
   .footer-item {
     width: 45%;
@@ -88,14 +85,12 @@
   .footer-logo-item-container {
     width: 20%;
   }
+
+  .copy-right-text-container {
+    padding-top: 60px;
+  }
 }
 
-.copy-right-text-container {
-  padding-top: 60px;
-
-}
-
-/* Media Query for Mobile (480px and up) */
 @media (max-width: 768px) {
   .footer-main-container {
     flex-direction: column;
@@ -124,7 +119,6 @@
 
   .copy-right-text-container {
     padding-top: 0px;
-
   }
 }
 

@@ -139,34 +139,45 @@ function Home() {
       </div>
 
       <div className="feature-container">
-        <FeatureCard 
-        image={"https://www.shorturl.at/img/icon-like.png"}
-        title={"Easy"} 
-        featurText={"ShortURL is easy and fast, enter the long link to get your shortened link"}
+        <FeatureCard
+          image={"https://www.shorturl.at/img/icon-like.png"}
+          title={"Easy"}
+          featurText={
+            "ShortURL is easy and fast, enter the long link to get your shortened link"
+          }
         />
         <FeatureCard
-         image={"https://www.shorturl.at/img/icon-url.png"}
-          title={"Shortened"} 
-          featurText={"Use any link, no matter what size, ShortURL always shortens"}
-          />
+          image={"https://www.shorturl.at/img/icon-url.png"}
+          title={"Shortened"}
+          featurText={
+            "Use any link, no matter what size, ShortURL always shortens"
+          }
+        />
         <FeatureCard
-         image={"https://www.shorturl.at/img/icon-secure.png"}
-          title={"Secure"} 
-          featurText={"It is fast and secure, our service has HTTPS protocol and data encryption"}
-          />
+          image={"https://www.shorturl.at/img/icon-secure.png"}
+          title={"Secure"}
+          featurText={
+            "It is fast and secure, our service has HTTPS protocol and data encryption"
+          }
+        />
         <FeatureCard
           image={"https://www.shorturl.at/img/icon-statistics.png"}
-           title={"Statistics"} 
-           featurText={" Check the number of clicks that your shortened URL received"}
+          title={"Statistics"}
+          featurText={
+            " Check the number of clicks that your shortened URL received"
+          }
         />
-        <FeatureCard image={"https://www.shorturl.at/img/icon-unique.png"}
-        featurText={"All links that try to disseminate spam, viruses and malware are deleted"}
-         title={"Reliable"} 
-         />
+        <FeatureCard
+          image={"https://www.shorturl.at/img/icon-unique.png"}
+          featurText={
+            "All links that try to disseminate spam, viruses and malware are deleted"
+          }
+          title={"Reliable"}
+        />
         <FeatureCard
           image={"https://www.shorturl.at/img/icon-responsive.png"}
-           title={"Devices"} 
-           featurText={"Compatible with smartphones, tablets and desktop"}
+          title={"Devices"}
+          featurText={"Compatible with smartphones, tablets and desktop"}
         />
       </div>
 

@@ -5,6 +5,7 @@ import toast, { Toaster } from "react-hot-toast";
 import Navbar from "../../components/Navbar/Navbar";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
+import image from "./Sign up-bro.png";
 
 function SignUp() {
   const [user, setUser] = useState({
@@ -14,7 +15,8 @@ function SignUp() {
   });
 
   const signup = async () => {
-    const response = await axios.post(`${process.env.REACT_APP_API_URL}/signup`,
+    const response = await axios.post(
+      `${process.env.REACT_APP_API_URL}/signup`,
       {
         fullName: user.fullName,
         email: user.email,
@@ -23,62 +25,83 @@ function SignUp() {
     );
     if (response.data.success) {
       toast.success(response.data.message);
-      
+
       setUser({
         fullName: "",
         email: "",
         password: "",
       });
-      setTimeout(()=>{
-        window.location.href ="/login"
-      })
+      setTimeout(() => {
+        window.location.href = "/login";
+      });
     } else {
       toast.error(response.data.message);
     }
   };
+
   return (
     <>
-    <Navbar/>
-    <div className="signup-main-container">
-      <h1 className="app-title"> User SignUp </h1>
-      <form className="user-input-form">
-        <input
-          type="text"
-          placeholder="Enter Your Name"
-          className="user-signup-input"
-          value={user.fullName}
-          onChange={(e) => {
-            setUser({ ...user, fullName: e.target.value });
-          }}
-        />
-        <input
-          type="Email"
-          placeholder="Enter Your Email"
-          className="user-signup-input"
-          value={user.email}
-          onChange={(e) => {
-            setUser({ ...user, email: e.target.value });
-          }}
-        />
-        <input
-          type="Password"
-          placeholder="Enter Your Password"
-          className="user-signup-input"
-          value={user.password}
-          onChange={(e) => {
-            setUser({ ...user, password: e.target.value });
-          }}
-        />
-        <button type="button" onClick={signup} className="register-button">
-          Register
-        </button>
-      </form>
-      <Link to="/login" className='login-link'>Already have an account? Login</Link>
-     
+      <Navbar />
+      <div className="main-container1">
+        <div className="contact-img-container">
+          <img src={image} className="signup-img" />
+        </div>
+
+       
+          <div className="signup-main-container">
+            <h1 className="app-title"> User SignUp </h1>
+
+            <form className="user-input-form">
+              <input
+                type="text"
+                placeholder="Enter Your Name"
+                className="user-signup-input"
+                value={user.fullName}
+                onChange={(e) => {
+                  setUser({ ...user, fullName: e.target.value });
+                }}
+              />
+              <input
+                type="Email"
+                placeholder="Enter Your Email"
+                className="user-signup-input"
+                value={user.email}
+                onChange={(e) => {
+                  setUser({ ...user, email: e.target.value });
+                }}
+              />
+              <input
+                type="Password"
+                placeholder="Enter Your Password"
+                className="user-signup-input"
+                value={user.password}
+                onChange={(e) => {
+                  setUser({ ...user, password: e.target.value });
+                }}
+              />
+              <button
+                type="button"
+                onClick={signup}
+                className="register-button"
+              >
+                Register
+              </button>
+            </form>
+            <span className="already-acount-create-text login-link">
+              Already have an account?
+            </span>
+            <Link to="/login" className="login-link">
+              Login
+            </Link>
+
+            <Toaster />
+          </div>
+        </div>
+  
       <Toaster />
-    </div>
-    <Footer/>
-    </>);
+      <Footer />
+    </>
+  );
 }
 
 export default SignUp;
