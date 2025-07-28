@@ -19,7 +19,8 @@
 
 }
 
-.contact-img-container {}
+.contact-img-container {
+}
 
 .signup-img {
   height: 600px;
@@ -90,10 +91,17 @@
 /*  media queries  */
 
 @media screen and (min-width: 993px) and (max-width: 1200px) {
+
+  .signup-img {
+  height: 600px;
+}
   .signup-main-container {
-    width: 45%;
-    margin: 10% auto;
+    width: 30%;
+    margin: 6% auto;
   }
+
+
+  
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
