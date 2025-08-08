@@ -66,7 +66,7 @@ function Navbar() {
           Home
         </Link>
 
-        <Link to="/showlinks" className="search-item" onClick={toggleMenu}>
+        <Link to="/" className="search-item" onClick={toggleMenu}>
           About
         </Link>
 

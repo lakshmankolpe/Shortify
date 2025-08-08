@@ -32,11 +32,11 @@
 
 .main-container {
   background-color: white;
-  height: 380px;
+  height: 400px!important;
   margin: 5% auto;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 1px 3px #e2e4e9;
+  box-shadow: 0 0 1px 3px #e2e4e9;  
 }
 
 .app-title {
@@ -101,6 +101,7 @@
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .main-container {
     width: 60%;
+    height: 430px;
   }
 
   .home-form-container {
@@ -119,7 +120,7 @@
 @media screen and (min-width: 769px) and (max-width: 993px) {
   .main-container {
     width: 70%;
-    height: 370px;
+    height: 430px;
   }
 
   .home-form-container {
@@ -143,7 +144,7 @@
 @media screen and (min-width: 600px) and (max-width: 768px) {
   .main-container {
     width: 80%;
-    height: 350px;
+    height: 400px;
   }
 
   .app-paragraph {
@@ -181,6 +182,7 @@
 @media screen and (min-width: 400px) and (max-width: 601px) {
   .main-container {
     width: 80%;
+    height: 400px!important;
   }
 
   .app-paragraph {
